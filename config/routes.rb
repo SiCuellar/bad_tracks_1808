@@ -10,6 +10,8 @@ Rails.application.routes.draw do
 
   resources :songs, only: [:index]
 
+  resources :carts, only: [:create]
+
   resources :users, only: [:new, :create, :show]
 
   namespace :admin do
